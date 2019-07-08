@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JOKENPO</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<div id="main">
+		<h1 id="title">JO.KEN.PO</h1>
+		<button id="help-button" class="button button5" onclick="hideShow()">Ajuda</button>
+		<div id="score">
+			<div id="player">
+				<h2 id="player-name"></h2>
+				<span id="player-score">0</span>
+
+				<ul id="player-choice">
+					<li><a id="player-choice-1" onclick="play(1)"><img src="imagem/left-rock.png"></a></li>
+					<li><a id="player-choice-2" onclick="play(2)"><img src="imagem/left-paper.png"></a></li>
+					<li><a id="player-choice-3" onclick="play(3)"><img src="imagem/left-scissors.png"></a></li>
+				</ul>
+			</div>
+
+			<div id="versus">Vs.</div>
+
+			<div id="computer">
+				<h2 id="computer-name"></h2>
+				<span id="computer-score">0</span>
+
+				<ul id="computer-choice">
+					<li><a id="computer-choice-1"><img src="imagem/right-rock.png"></a></li>
+					<li><a id="computer-choice-2"><img src="imagem/right-paper.png"></a></li>
+					<li><a id="computer-choice-3"><img src="imagem/right-scissors.png"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="messages"></div>
+	</div>
+	<div id="help" style="display: none">
+		<span onclick="hide()" class="close">x</span><br>
+		Clique em uma das mãos para escolher pedra, papel ou tesoura
+		<img src="imagem/ifpe.jpg" id="img">		
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
